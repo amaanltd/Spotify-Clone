@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  -webkit-user-select: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+
+body {
+  padding: 10px;
+  height: 100vh;
+  background-color: black;
+}
+
+/* left side */
+
+.left {
+  width: 25vw;
+}
+.home {
+  color: white;
+  gap: 17px;
+  padding: 25px 25px 0px 25px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #121212;
+}
+
+.home ul li {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 14px 0px;
+}
+.search {
+  color: #a7a7a7;
+}
+
+.library {
+  height: 55vh;
+  margin: 10px;
+  border-radius: 10px;
+  background: #121212;
+}
+.library section {
+  background: #242424;
+  border-radius: 10px;
+  width: 96%;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.main-sec {
+  height: 82px;
+  overflow-y: scroll;
+}
+
+.library section > div {
+  margin: 14px 25px;
+}
+
+.cp-btn button {
+  height: 32px;
+  width: 143px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.sec-txt {
+  gap: 12px;
+}
+
+.spn-1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.spn-2 {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.y-lib {
+  margin: 14px 25px;
+
+  border-radius: 10px;
+  gap: 18px;
+}
+.y-lib span {
+  color: #a7a7a7;
+}
+
+.right {
+  width: 75vw;
+}
+
+.footer {
+  gap: 14px;
+  margin: 55px 25px 25px 25px;
+  flex-wrap: wrap;
+}
+
+.f-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+.footer span {
+  font-weight: 100;
+  font-size: 11px;
+}
+
+.lang {
+  margin: 14px 25px;
+}
+
+.lang button {
+  gap: 4px;
+  height: 32px;
+  width: 96px;
+  border: 1px solid gray;
+  border-radius: 20px 20px 20px 20px;
+  background: #121212;
+}
+
+/* right side  */
+
+.right {
+  border-radius: 10px;
+}
+
+.nav {
+  margin: 10px 10px 0 10px;
+  align-items: center;
+  background: #101010;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+
+.hamberger img {
+  display: none;
+  margin: 20px;
+  filter: invert(2);
+}
+
+.sign-up {
+  font-weight: 900;
+  color: #a7a7a7;
+}
+
+.logins {
+  gap: 27px;
+  margin: 20px;
+}
+
+.login {
+  font-weight: 800;
+  background: white;
+  height: 48px;
+  width: 110px;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* hero */
+
+.hero {
+  height: 100%;
+  background-color: #1e1e1e;
+  margin: 0px 10px 10px 10px;
+}
+
+.title {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-artist {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 20px;
+}
+
+.show {
+  margin: 0px 20px;
+  font-size: 16px;
+  color: #a8a8a8;
+}
+
+.img img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.artist {
+  font-size: 15px;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+
+.cards {
+  height: 67vh;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+
+.playbar {
+  border-radius: 10px;
+  position: fixed;
+  bottom: 30px;
+  width: 72%;
+  height: 65px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playbtns {
+  gap: 25px;
+}
+.playbtns img {
+  filter: invert(1);
+  width: 33px;
+}
+
+.sName {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.aName {
+  font-size: 14px;
+  color: gray;
+}
+
+.seekbar {
+  cursor: pointer;
+  position: fixed;
+  bottom: 15px;
+  margin: 5px 0;
+  height: 5px;
+  width: 72%;
+  background-color: white;
+}
+
+.seekbar .circle {
+  position: relative;
+  left: 0%;
+  transition: left 0.5s;
+  bottom: 5px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: white;
+}
+.songtime {
+  display: flex;
+  justify-content: flex-end;
+  width: 13vw;
+}
+.songtitle {
+  width: 26vw;
+  margin-left: 5px;
+}
+
+.playbtns img {
+  cursor: pointer;
+}
+
+.close img {
+display: none;
+}
+
+.close {
+  margin: 0 14px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.volBar {
+  display: flex;
+  align-items: center;
+}
+.volBar img, input {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .right {
+    width: 100vw;
+  }
+
+ 
+
+  .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    background-color: black;
+    position: fixed;
+    top: 0;
+  height: 100vh;
+    left: -100%;
+    transition: 0.5s all;
+    width: 100vw;
+    z-index: 1;
+  }
+.playbar {
+  gap: 10px;
+  flex-direction: column;
+  bottom: 95px;
+  justify-content: center;
+}
+.songtitle, .songtime {
+  width: auto;
+  font-size: 23px;
+}
+
+  .playbar,
+  .seekbar {
+    width: 90vw;
+  }
+
+  .playbtns {
+    left: 47vw;
+  }
+.sName {
+  font-size: 14px;
+}
+
+.close img {
+  display: block;
+  }
+
+  .hamberger img {
+    display: block;
+  }
+
+}
+
+  @media screen and (max-width: 330px) {
+    .logins {
+      flex-direction: column ;
+    }
+    .login {
+      width: 80px;
+    }
+  }
+  

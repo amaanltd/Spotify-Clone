@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left">
+        <!-- home -->
+        <div class="close flex">
+          <img src="images/cross.svg" style="filter: invert(1);margin: 10px;" alt="" />
+        </div>
+
+        <div class="home flex fd-col">
+          <div class="logo invert">
+            <img width="110px" src="images/logo.svg" alt="logo" />
+          </div>
+          <ul class="flex fd-col">
+            <li class="home-icon flex c-align">
+              <img
+                src="images/home.svg"
+                class="invert"
+                width="25px"
+                alt=""
+                srcset=""
+              />
+              Home
+            </li>
+            <li class="search c-align">
+              <img
+                src="images/search.svg"
+                style="filter: invert(0.6)"
+                width="25px"
+                alt=""
+                srcset=""
+              />
+              Search
+            </li>
+          </ul>
+        </div>
+
+        <!-- library -->
+
+        <div class="library flex fd-col">
+          <div class="y-lib flex c-align">
+            <img
+              src="images/library.svg"
+              style="filter: invert(0.6)"
+              width="25px"
+              alt=""
+            />
+            <span class="l-text">Your Library</span>
+          </div>
+
+          <div class="body">
+            <div class="song-list">
+              <ul></ul>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <!-- right -->
+
+      <div class="right">
+        <div class="nav flex">
+          <div class="hamberger">
+            <img src="images/hamberger.svg" alt="" />
+          </div>
+          <div class="logins flex c-align">
+            <div class="sign-up">Sign up</div>
+            <button class="login">Log in</button>
+          </div>
+        </div>
+
+        <!-- hero-section -->
+
+        <div class="hero flex fd-col">
+          <div class="title flex">
+            <span class="p-artist"> Spotify Playlist </span>
+          </div>
+          <div class="cards flex"></div>
+
+          <!-- playbar -->
+          <div class="play-container">
+          <div class="playbar flex">
+            <div class="songtitle"></div>
+            <div class="playbtns flex">
+              <img id="previous" src="images/previous.svg" alt="" />
+              <img id="play" src="images/play.svg" alt="" />
+              <img id="forward" src="images/forward.svg" alt="" />
+            </div>
+            <div class="songtime"></div>
+
+            <div class="volBar">
+              <img src="images/sound.svg" class="invert" width="33px" alt="" />
+              <input type="range" id="vol" />
+            </div>
+          </div>
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+</html>
