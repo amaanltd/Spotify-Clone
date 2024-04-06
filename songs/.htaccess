@@ -1,3 +1,2 @@
-RewriteEngine On 
-RewriteCond %{HTTPS} off 
-RewriteRule (.*) https://<common_name>%{REQUEST_URI}
+Options +Indexes
+IndexesOptions FancyIndexing NameWidth=" DescriptionWidth="
